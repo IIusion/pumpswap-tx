@@ -58,3 +58,12 @@ A minimal, dependency-light **instruction builder for the PumpSwap AMM**
     Wrap each instruction with a ComputeBudget price/limit and your ATA-create
     instructions, sign, and send. The builders return raw solana_sdk::Instruction
     values, so they compose with any sending path (RPC, Jito, etc.).
+
+    Tests
+
+      ```bash
+        cargo test
+      ```
+
+    Layout invariants (account counts, data lengths, discriminators, orientation
+    selection) are covered by unit tests.
